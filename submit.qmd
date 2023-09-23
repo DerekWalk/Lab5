@@ -6,6 +6,7 @@ format:
     embed-resources: true
 ---
 ```{r message=F, warning=FALSE}
+setwd("/Users/gazallab")
 if(!require("R.utils")){ install.packages("R.utils")
 library("R.utils")}
 library(dtplyr)
@@ -20,7 +21,7 @@ if (!file.exists(tmp)) {
     # method   = "libcurl", timeout = 1000 (you may need this option)
   )
 }
-tmp<- data.table::fread("/Users/gazallab/Downloads/met_all.gz")
+tmp<- data.table::fread(tmp)
 ```
 
 You can add options to executable code like this
