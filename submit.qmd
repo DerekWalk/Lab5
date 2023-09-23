@@ -179,7 +179,7 @@ q4 <- merge(
   all.x = TRUE,      
   all.y = FALSE
   )
-head(q4)
+head(q4, 20)
 
 
 attach(q4)
